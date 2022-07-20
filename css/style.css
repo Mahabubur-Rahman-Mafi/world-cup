@@ -78,6 +78,7 @@ a, a:hover {
 }
 
 
+
 /*-----------------
  news-section css---
  -------------------- */
@@ -94,10 +95,14 @@ a, a:hover {
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr;
+    justify-content: center; 
+    text-align: center;
     row-gap: 30px;
     padding: 30px;
 }
-.item  .item-btn{
+.item a .item-btn{
+    width:190px ;
+    height: 64px;
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
@@ -106,12 +111,12 @@ a, a:hover {
     border-radius: 10px;
     cursor: pointer;
 }
-.item .item-btn:hover{
+.item a .item-btn:hover{
     background-color: #DD0000;
     color: #fff;
     
 }
-.item .active{
+.item a .active{
     background-color: #DD0000;
     color: #fff;
     border: none;
@@ -123,7 +128,7 @@ a, a:hover {
 }
 
  /* card css */
-.card{
+.blog .card{
     width: 270px;
     height: 375px;
     text-align: left;
@@ -131,13 +136,13 @@ a, a:hover {
     border:1px solid #fffefe;
     box-shadow: 1px 1px 1px 1px #ebe9e9;
 }
-.card:hover{
+.blog .card:hover{
     transform: scale(1.01);
 }
-.card img{
+.blog .card img{
     width: 100%;
 }
-.card button{
+.blog .card button{
     font-size: 16px;
     color: #161616;
     font-weight: 600;
@@ -148,30 +153,116 @@ a, a:hover {
     border-radius: 5px;
     margin:20px 0px 15px 10px;
 }
-.card button:hover{
+.blog .card button:hover{
     background-color: #DD0000;
     color: #fff;
     border: none;
     cursor: pointer;
     margin-left: 10px;
 }
-.card h4{
+.blog .card h4{
     font-size: 18px;
     font-weight: 600;
     color: #161616;
     line-height: 27px;
     margin: 0px 0px 20px 10px;
 }
-.card p i{
+.blog .card p i{
     margin-left: 10px;
     font-size:16px ;
     line-height: 26px;
     /* padding: 5px; */
     margin-right: 5px;
 }
-.card .fa-message{
+.blog .card .fa-message{
     margin-left: 30px;
 }
+/*--------------
+match card css 
+-------------- */
+.match{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.match .card{
+    width: 250px;
+    height: 160px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #fffefe;
+    box-shadow: 1px 1px 1px 1px #ebe9e9;
+    padding: 40px 10px 15px;
+}
+.match .card:hover{
+    transform: scale(1.01);
+}
+.match .card .flag{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.match .card .flag img{
+    width: 40%;
+}
+.match .card .flag span{
+    font-size: 16px;
+    color: #161616;
+    font-weight: 700;
+}
+.match .card h4{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    margin: 20px 0 5px;
+}
+.match .card p{
+    font-size: 16px;
+    line-height: 19.72px;
+    font-weight: 400;
+}
+/* .item a .match-active{
+    background-color: #DD0000;
+    color: #fff;
+    
+} */
+
+
+/*--------------------
+---- all-group css--- 
+------------------ */
+.all-group{
+    width: 50%;
+    margin: 100px auto 0px;
+    background-color: #f9f9f9;
+    border-radius: 25px;
+    text-align: center;
+    padding: 40px;
+}
+.all-group > i{
+    font-size: 150px;
+    color: #ff0000;
+}
+.all-group p{
+    font-size: 30px;
+    font-weight: 600;
+    color: #161616;
+    margin: 15px 0px 5px;
+}
+.all-group a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #161616;
+}
+.all-group a:hover{
+    text-decoration: underline;
+}
+.all-group a:hover i{
+    transform: translate(5px);
+}
+
+
 
 
 /*-----------------------
