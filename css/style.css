@@ -41,6 +41,9 @@ a, a:hover {
 .btn:hover i{
     transform: translate(10px) scale(1.5);
 }
+.load-btn{
+    display: none;
+}
 
 /*-------------------------
 -- header-section css start
