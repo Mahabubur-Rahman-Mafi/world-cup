@@ -257,6 +257,7 @@ match card css
 }
 .all-group a:hover{
     text-decoration: underline;
+    color: #DD0000;
 }
 .all-group a:hover i{
     transform: translate(5px);
