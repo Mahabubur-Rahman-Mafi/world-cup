@@ -73,6 +73,7 @@ a, a:hover {
 }
 .header-section .header-image img{
     width: 100%;
+    display: block;
     position: relative;
     right: 40px;
 }

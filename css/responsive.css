@@ -36,13 +36,98 @@
      .btn:hover i {
     transform: translate(6px) scale(1.2);
     }
-}
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        
+    }
 
+    /* new-section  */
+        .news-section {
+            margin-top: 50px;
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+        }
+        .item {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 5px;
+
+        }
+        .item a .item-btn {
+            width: 90%;
+            height: 64px;
+            background-color: #fff;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .item a .active {
+            background-color: #DD0000;
+            color: #fff;
+            border: none;
+        }
+        .blog {
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            row-gap: 30px;
+        }
+        .blog .card {
+            width: 90%;
+            gap: 50px;
+            margin: 0px auto;
+            padding: 20px 10px 10px;
+        }
+        .match {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .match .card {
+            width: 90%;
+            padding: 20px 10px 10px;
+            margin: 0px auto;
+        }
+        .match .card:hover {
+               transform: scale(1.01);
+        }
+
+        /* footer-section css  */
+        .footer-section {
+            width: 100%;
+            padding: 60px 0px;
+        }
+        .footer-section hr {
+            margin: 20px 0px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .footer-section li {
+            margin: 20px 0px 0px 30px;
+        }
+        .footer-section .social-link {
+            margin-top: 10px;
+        }
+
+
+}
 
 
 /*  Small devices (landscape phones,  When the width is less than 576px )  */
 @media only screen and (max-width: 575.98px) {
-    /* header-secion  */
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        
+     }
+/* header-secion  */
+
     .header-section {
             width: 95%;
             height: 100%;
@@ -81,4 +166,89 @@
         .btn:hover i {
             transform: translate(6px) scale(1.2);
         }
+
+
+        /* new-section  */
+        .news-section {
+            margin-top: 50px;
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+        }
+    
+        .item {
+            width: 90%;
+            height: 100%;
+            margin: 0px auto;
+            background-color: transparent;
+            grid-template-columns: 1fr;
+            padding: 0px;
+    
+        }
+    
+        .item a .item-btn {
+            width: 70%;
+        }
+  
+    
+        .blog {
+            width: 100%;
+            grid-template-columns: 1fr;
+            /* gap: 15px; */
+            row-gap: 30px;
+        }
+    
+        .blog .card {
+            width: 80%;
+            height: 100%;
+            margin: 0px auto;
+        }
+        .match {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+        }
+    
+        .match .card {
+            width: 80%;
+            margin: 0px auto;
+        }
+
+
+
+        /* footer-section  */
+        .footer-section {
+            width: 100%;
+            padding: 40px 0px;
+            /* text-align: center; */
+        }
+
+        .footer-section hr {
+            margin: 20px 0px;
+        }
+
+        .footer-section ul  {
+            list-style: none;
+            display: block;
+            /* text-align: center; */
+        }
+
+        .footer-section li {
+            margin: 20px 0px 0px 0px;
+        }
+
+        .footer-section ul.social-link {
+            display: flex;
+            margin-top: 10px;
+        }
+        .footer-section .social-link li a {
+            font-size: 24px;
+        }
+        .footer-section .social-link a {
+            margin: 10px;
+        }
+
+}
+
+    
+
+
 }
