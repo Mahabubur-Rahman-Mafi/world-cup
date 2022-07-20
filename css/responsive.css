@@ -10,7 +10,7 @@
         grid-template-columns: 1fr;
         margin: 20px auto 0px;
         position: relative;
-        left: -230px;
+        left: 150px;
 
     }
     /* header-secion  */
@@ -145,17 +145,6 @@
             margin: 0 auto;
     }
 
-    .load-btn {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 20px auto 0px;
-        position: relative;
-        left: -160px;
-    
-        }
-    
-    
-    
     /* header-secion  */
     .header-section {
         width: 95%;
