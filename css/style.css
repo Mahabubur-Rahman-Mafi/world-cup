@@ -80,10 +80,6 @@ a, a:hover {
     position: relative;
     right: 40px;
 }
-.header-section:hover .header-image img{
-    transform: translate(15px)
-}
-
 
 
 /*-----------------
